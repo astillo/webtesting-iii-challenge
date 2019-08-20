@@ -10,7 +10,7 @@ describe("<Controls />", () => {
     it("matches snapshot", () => {
         const tree = renderer.create(<Controls />); // generates a DOM tree
 
-        // snapshots are a JSON representation of the DOM tree
+
         expect(tree.toJSON()).toMatchSnapshot();
     });
     it('displays locked when lock is clicked', () => {
