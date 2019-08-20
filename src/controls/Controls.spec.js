@@ -8,7 +8,7 @@ import Controls from "./Controls";
 describe("<Controls />", () => {
     // 2. write this test
     it("matches snapshot", () => {
-        const tree = renderer.create(<Controls />); // generates a DOM tree
+        const tree = renderer.create(<Controls />);
 
 
         expect(tree.toJSON()).toMatchSnapshot();
