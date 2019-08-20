@@ -14,8 +14,6 @@ describe("<Controls />", () => {
         expect(tree.toJSON()).toMatchSnapshot();
     });
     it('displays locked when lock is clicked', () => {
-        const lock = jest.fn()
-        let lockedMock = ''
         let state = { open: true, closed: false, locked: false }
         const { container } = render(<Controls {...state} />)
         expect(container.getElementsByTagName('button')[0].disabled).toBe(true)
